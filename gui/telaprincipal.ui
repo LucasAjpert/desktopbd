@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>703</width>
+    <height>0</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>-190</x>
+      <y>-160</y>
+      <width>931</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(209, 209, 209);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>35</y>
+      <width>651</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-radius: 8px;
+padding-left: 10px;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;USUARIOS CADASTRADOS RECENTEMENTE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>40</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Usuario logado:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="logado">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>40</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidgeusuarios">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>651</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 8px;</string>
+    </property>
+    <column>
+     <property name="text">
+      <string>id</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>nome</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>documento</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>email</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>data de nascimento</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>endereço</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="botaorelatorio">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>0</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image : url(:/iconprincipal/icons/document.svg);
+border:none;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>703</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuarquivos">
+    <property name="title">
+     <string>arquivos</string>
+    </property>
+    <addaction name="actionadd"/>
+    <addaction name="actioneditar"/>
+    <addaction name="actionpesquisar"/>
+    <addaction name="actionatualizar"/>
+   </widget>
+   <addaction name="menuarquivos"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionadd"/>
+   <addaction name="actioneditar"/>
+   <addaction name="actionpesquisar"/>
+   <addaction name="actionatualizar"/>
+  </widget>
+  <action name="actionadd">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/iconprincipal/icons/personal.svg</normaloff>:/iconprincipal/icons/personal.svg</iconset>
+   </property>
+   <property name="text">
+    <string>add</string>
+   </property>
+   <property name="toolTip">
+    <string>cadastrar pessoas</string>
+   </property>
+  </action>
+  <action name="actioneditar">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/iconprincipal/icons/pen.svg</normaloff>:/iconprincipal/icons/pen.svg</iconset>
+   </property>
+   <property name="text">
+    <string>editar</string>
+   </property>
+   <property name="toolTip">
+    <string>editar cadastro</string>
+   </property>
+  </action>
+  <action name="actionpesquisar">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/iconprincipal/icons/search.svg</normaloff>:/iconprincipal/icons/search.svg</iconset>
+   </property>
+   <property name="text">
+    <string>pesquisar</string>
+   </property>
+   <property name="toolTip">
+    <string>pesquisar cadastro</string>
+   </property>
+  </action>
+  <action name="actionatualizar">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/iconprincipal/icons/forward.svg</normaloff>:/iconprincipal/icons/forward.svg</iconset>
+   </property>
+   <property name="text">
+    <string>atualizar</string>
+   </property>
+   <property name="toolTip">
+    <string>atualizar sistema</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../atualizar.qrc"/>
+ </resources>
+ <connections/>
+</ui>

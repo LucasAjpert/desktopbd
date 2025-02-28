@@ -18,7 +18,7 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QApplication, QDialog, QHeaderView, QLabel,
     QLineEdit, QSizePolicy, QTableWidget, QTableWidgetItem,
     QWidget)
-import principal
+import templete.principal as principal
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):

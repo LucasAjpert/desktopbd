@@ -43,7 +43,7 @@ class Ui_Dialog(object):
         self.pesquisarbotao = QLabel(Dialog)
         self.pesquisarbotao.setObjectName(u"pesquisarbotao")
         self.pesquisarbotao.setGeometry(QRect(470, 20, 41, 31))
-        self.pesquisarbotao.setStyleSheet(u"image: url(:/atualizar/icons/search.svg);\n"
+        self.pesquisarbotao.setStyleSheet(u"image: url(:/atualizo/icons/search.svg);\n"
 "border: none;\n"
 "background-color: rgb(255, 255, 255);\n"
 "border-radius: 60%;")
@@ -60,7 +60,7 @@ class Ui_Dialog(object):
         self.excluirbotao = QPushButton(Dialog)
         self.excluirbotao.setObjectName(u"excluirbotao")
         self.excluirbotao.setGeometry(QRect(620, 180, 61, 51))
-        self.excluirbotao.setStyleSheet(u"image: url(:/atualizar/icons/delete.svg);\n"
+        self.excluirbotao.setStyleSheet(u"image: url(:/atualizo/icons/delete.svg);\n"
 "background-color: rgb(209, 209, 209);\n"
 "border: none;")
         self.tableWidget = QTableWidget(Dialog)

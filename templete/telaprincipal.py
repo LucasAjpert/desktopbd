@@ -19,7 +19,7 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
 from PySide6.QtWidgets import (QApplication, QHeaderView, QLabel, QMainWindow,
     QMenu, QMenuBar, QSizePolicy, QStatusBar,
     QTableWidget, QTableWidgetItem, QToolBar, QWidget)
-import atualizar
+import templete.atualizar as atualizar
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
